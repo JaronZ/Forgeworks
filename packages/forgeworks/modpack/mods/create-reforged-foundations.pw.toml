@@ -1,0 +1,13 @@
+name = "Create: Reforged Foundations"
+filename = "CreateReforgedFoundations-1.5.0-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a2db366c1934473d7eab6e99c6e1393eeeb22bfd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6430513
+project-id = 1118674

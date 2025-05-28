@@ -1,0 +1,13 @@
+name = "Mob Stacker Ind."
+filename = "MobStacker-1.21.1-2-neoforge-1.0.14b.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0ef3a841a95e1b2adda99b5741693332778cf0cd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6310982
+project-id = 1115297
