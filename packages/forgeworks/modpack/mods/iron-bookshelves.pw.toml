@@ -1,0 +1,13 @@
+name = "Iron Bookshelves"
+filename = "ironbookshelves-1.21.1-1.4.10-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "10bdd5116087284486d40018cbb0f5b1bd22b198"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6413744
+project-id = 651738

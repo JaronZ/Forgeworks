@@ -21,7 +21,8 @@
 		"dev:server": "yarn setup:server && yarn clean:server && yarn predev && yarn env:server",
 		"curseforge:add": "cd modpack && packwiz curseforge add",
 		"modrinth:add": "cd modpack && packwiz modrinth add",
-		"modpack:refresh": "cd modpack && packwiz refresh"
+		"modpack:refresh": "cd modpack && packwiz refresh",
+		"modpack:settings": "cd modpack && packwiz settings"
 	},
 	"devDependencies": {
 		"@favware/cliff-jumper": "^6.0.0",
