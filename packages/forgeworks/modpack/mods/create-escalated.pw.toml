@@ -1,0 +1,13 @@
+name = "Create: Escalated"
+filename = "escalated-1.0.4-create.6.0.4-mc.1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d824ecfd0bafa348519bdc65d2b262b51bf639b8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6535828
+project-id = 1260145
