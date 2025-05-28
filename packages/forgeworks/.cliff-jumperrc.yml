@@ -1,0 +1,10 @@
+name: forgeworks
+org: jaronz
+install: true
+packagePath: packages/forgeworks
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true
+gitRepo: jaronz/forgeworks
+gitHostVariant: github
