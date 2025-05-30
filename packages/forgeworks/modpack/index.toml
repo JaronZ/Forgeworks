@@ -847,7 +847,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamic-crosshair.pw.toml"
-hash = "77dfe3c9e71872ca42436b48e8a0208a4aeccc40b389da0562693b518388ab08"
+hash = "c581684b24f21872e772adc026f25541bd74a1a841f5d031e1b83316a21741d3"
 metafile = true
 
 [[files]]
@@ -1202,7 +1202,7 @@ metafile = true
 
 [[files]]
 file = "mods/keybindspurger.pw.toml"
-hash = "e2244f37df7ad4fd6b49c5986ff7403d790d8b13acb488564ba7368fb9d941f3"
+hash = "9794ce1525a96b42d03b0df6e99afc360c634b10ffa3710624ab69d9510195c7"
 metafile = true
 
 [[files]]
@@ -1282,7 +1282,7 @@ metafile = true
 
 [[files]]
 file = "mods/moderately-enough-effect-descriptions-meed.pw.toml"
-hash = "9ea4c418c399ebeb8887ca2d8704519af293516e0d83922abb862e7931c7d091"
+hash = "b5efa15d88096bb7a55cd44a9950b811e031db9468c52ad8395273ad7c2cf963"
 metafile = true
 
 [[files]]
@@ -1342,7 +1342,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "de00a4d90acc3d1d79883f7a1b8bd9304e9c255358b9da0d13ac09fe498f9c66"
+hash = "c3860c85c1e463f24b2b5fc25e4542c76f05a6cd6ba67ec4b8f595a45c568389"
 metafile = true
 
 [[files]]
@@ -1532,7 +1532,7 @@ metafile = true
 
 [[files]]
 file = "mods/smithing-template-viewer.pw.toml"
-hash = "c93265c863c2f21155439ea791437d78430d31ac7293aff3fa2e90457c0eb82a"
+hash = "d3c1786417ee8ab1caef58c87665b39c1870765fbd6be7376b4e77db47faf694"
 metafile = true
 
 [[files]]
