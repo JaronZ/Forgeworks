@@ -9,7 +9,7 @@ fi
 
 echo "Cleaning up client installation at $INSTALL_DIR..."
 rm -rf "$INSTALL_DIR/config"/* "$INSTALL_DIR/defaultconfigs"/* "$INSTALL_DIR/downloads"/* "$INSTALL_DIR/logs"/* \
-  "$INSTALL_DIR/mods"/* "$INSTALL_DIR/resourcepacks"/* "$INSTALL_DIR/saves"/* "$INSTALL_DIR/shaderpacks"/* \
+  "$INSTALL_DIR/mods"/* "$INSTALL_DIR/resourcepacks"/* "$INSTALL_DIR/shaderpacks"/* \
   "$INSTALL_DIR/options.txt" "$INSTALL_DIR/servers.dat" "$INSTALL_DIR/servers.dat_old" \
   "$INSTALL_DIR/usercache.json" "$INSTALL_DIR/usernamecache.json"
 echo "Client installation cleaned up successfully."

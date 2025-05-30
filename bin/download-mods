@@ -41,7 +41,7 @@ echo "Removing old files..."
 find . -type f -printf "%p\n" | while read file
 do
     filename=$(basename "$file")
-    [ "$(echo "$@" | grep -o "$filename")" = "" ] && rm $file
+    [ "$(echo "$@" | grep -o "$filename")" = "" ] && rm "$file"
 done
 
 exit 0
