@@ -951,11 +951,6 @@ hash = "04e55f3da2a2fb2083075ed474fb6d69bb519b7f42da65c7d333e894781dcddb"
 metafile = true
 
 [[files]]
-file = "mods/fancy-delight.pw.toml"
-hash = "6f0d6cd7d7417efb98dc163b0307392a85a33e6690eb2f3a6df256b6725e9d51"
-metafile = true
-
-[[files]]
 file = "mods/farmers-cutting-oh-the-biomes-weve-gone.pw.toml"
 hash = "44030876800c6a4cb0be4f78a906db0c230dea8f60007afbbd67262f194e0751"
 metafile = true
@@ -1501,11 +1496,6 @@ hash = "b210b54498abff891f524a0ce32b7b81bfc88043604065bd4ece9e71c36427f4"
 metafile = true
 
 [[files]]
-file = "mods/seasonhud.pw.toml"
-hash = "20e386e914a68833410e952dd2e5dccaa7af709bdab418f78422d49bb23ca11f"
-metafile = true
-
-[[files]]
 file = "mods/seed-delight.pw.toml"
 hash = "18d565f0af979a8874f37eb8394659ecb15200ae441612b3b51921ad2265885e"
 metafile = true
@@ -1513,11 +1503,6 @@ metafile = true
 [[files]]
 file = "mods/selene.pw.toml"
 hash = "72436f0f2488be654445969e3c009a2fca8a72ff1c292ace26699d9c3cdbb4cf"
-metafile = true
-
-[[files]]
-file = "mods/serene-seasons.pw.toml"
-hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
 metafile = true
 
 [[files]]
