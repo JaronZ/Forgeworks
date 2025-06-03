@@ -34,7 +34,7 @@ lcminigames.minigames.set("generation", {
 			// Ingots and Ores
 			{ item: Item.of("minecraft:amethyst_shard", 3), chance: 500 },
 			{ item: Item.of("minecraft:copper_ingot", 5), chance: 500 },
-			{ item: Item.of("minecraft:coal", 5), chance: 950 },
+			{ item: Item.of("minecraft:coal", 5), chance: 550 },
 			{ item: Item.of("immersivengineering:coal_coke", 5), chance: 500 }, 
 			{ item: Item.of("minecraft:iron_ingot", 3), chance: 500 }, 
 			{ item: Item.of("minecraft:gold_ingot", 3), chance: 500 },
@@ -58,8 +58,12 @@ lcminigames.minigames.set("generation", {
 			{ item: Item.of("gobber2:gobber2_ingot"), chance: 10 },
 			{ item: Item.of("gobber2:gobber2_nether_ingot"), chance: 5 },
 			{ item: Item.of("gobber2:gobber2_ender_ingot"), chance: 1 },
+			{ item: Item.of("gobber2:gobber2_foo"), chance: 100 },
+			{ item: Item.of("gobber2:gobber2_foo_nether"), chance: 50 },
+			{ item: Item.of("gobber2:gobber2_foo_end"), chance: 10 },
 			{ item: Item.of("create:zinc_ingot", 3), chance: 500 },
 			{ item: Item.of("create:andesite_alloy", 3), chance: 500 },
+			
 			// Food
 			{ item: Item.of("minecraft:apple"), chance: 400 },               
 			{ item: Item.of("minecraft:carrot"), chance: 350 },              
@@ -83,13 +87,11 @@ lcminigames.minigames.set("generation", {
 			{ item: Item.of("minecraft:cooked_rabbit"), chance: 200 },      
 			{ item: Item.of("minecraft:cooked_salmon"), chance: 200 },        
 			// Storage Cells
-			{ item: Item.of("ae2:cell_component_1k"), chance: 300 },
-			{ item: Item.of("ae2:cell_component_4k"), chance: 200 },
-			{ item: Item.of("ae2:cell_component_16k"), chance: 100 },
-			{ item: Item.of("ae2:cell_component_64k"), chance: 50 },
-			{ item: Item.of("ae2:cell_component_256k"), chance: 15 },
-			{ item: Item.of("ae2:cell_component_1024k"), chance: 5 },
-			{ item: Item.of("ae2:cell_component_4096k"), chance: 1 },
+			{ item: Item.of("item_storage_cell_1k"), chance: 300 },
+			{ item: Item.of("item_storage_cell_4k"), chance: 200 },
+			{ item: Item.of("item_storage_cell_16k"), chance: 100 },
+			{ item: Item.of("item_storage_cell_64k"), chance: 50 },
+			{ item: Item.of("item_storage_cell_256k"), chance: 15 },
 
 			// Other Items
 			{ item: Item.of("minecraft:ender_pearl"), chance: 100 },
