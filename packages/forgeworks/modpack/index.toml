@@ -137,10 +137,6 @@ file = "kubejs/data/immersiveengineering/worldgen/configured_feature/uranium.jso
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
-file = "kubejs/data/mekanism/worldgen/configured_feature/ore.json"
-hash = "87f067a2b3df38c8fd101b76b6033a9e10f3ff0b37063618fb9c3bc86c8c9a46"
-
-[[files]]
 file = "kubejs/data/mekanism/worldgen/configured_feature/ore_fluorite_buried.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
