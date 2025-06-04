@@ -14,10 +14,6 @@ ServerEvents.commandRegistry((event) => {
 					)
 				)
 			)
-			.then(
-				Commands.literal("start").executes(
-					(c) => (global.lcminigames.startMinigame(c.source), 1)
-				)
-			)
+			.then(Commands.literal("start").executes((c) => (global.lcminigames.startMinigame(c.source), 1)))
 	);
 });

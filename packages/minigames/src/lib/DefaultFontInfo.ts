@@ -105,10 +105,7 @@ lcminigames.DefaultFontInfo = class DefaultFontInfo {
 	}
 
 	public static getDefaultFontInfo(c: string): DefaultFontInfo {
-		return (
-			DefaultFontInfo.instances.find((v) => v.character === c) ||
-			this.DEFAULT
-		);
+		return DefaultFontInfo.instances.find((v) => v.character === c) || this.DEFAULT;
 	}
 
 	public getCharacter(): string {

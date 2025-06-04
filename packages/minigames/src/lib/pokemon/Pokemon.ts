@@ -19,8 +19,6 @@ lcminigames.Pokemon = class Pokemon {
 	}
 };
 
-Object.keys(JsonIO.read("kubejs/config/lcminigames/pokemon.json")).forEach(
-	(k) => {
-		lcminigames.Pokemon[k] = new lcminigames.Pokemon(pokemon[k]);
-	}
-);
+Object.keys(JsonIO.read("kubejs/config/lcminigames/pokemon.json")).forEach((k) => {
+	lcminigames.Pokemon[k] = new lcminigames.Pokemon(pokemon[k]);
+});

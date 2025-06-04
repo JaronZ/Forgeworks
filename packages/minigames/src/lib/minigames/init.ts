@@ -8,15 +8,9 @@ lcminigames.minigames = new Collection();
 	let currentMinigame = null;
 	let minigameTimer = null;
 
-	function transformRewards(
-		rewards: { item: unknown; chance: number }[]
-	): unknown[] {
+	function transformRewards(rewards: { item: unknown; chance: number }[]): unknown[] {
 		return global.lcminigames.shuffle(
-			global.lcminigames.flatArray(
-				rewards.map((r) =>
-					Array.from({ length: r.chance }).fill(r.item)
-				)
-			)
+			global.lcminigames.flatArray(rewards.map((r) => Array.from({ length: r.chance }).fill(r.item)))
 		);
 	}
 
@@ -35,12 +29,9 @@ lcminigames.minigames = new Collection();
 	function timeLimit(server: $MinecraftServer): void {
 		if (!currentMinigame) return;
 		if (minigameTimer) minigameTimer.clear();
-		minigameTimer = server.scheduleInTicks(
-			currentMinigame.timeLimit,
-			() => {
-				global.lcminigames.endMinigame({ server: server });
-			}
-		);
+		minigameTimer = server.scheduleInTicks(currentMinigame.timeLimit, () => {
+			global.lcminigames.endMinigame({ server: server });
+		});
 	}
 
 	global.lcminigames.shouldExecute = function (eventName: string): boolean {

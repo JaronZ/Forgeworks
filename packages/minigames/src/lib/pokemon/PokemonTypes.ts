@@ -185,19 +185,13 @@ lcminigames.Pokemon.Type = class Type {
 				type1 = Math.floor(Math.random() * this.instances.length);
 				type2 = Math.floor(Math.random() * this.instances.length);
 			} while (type1 === type2);
-			return [
-				Type.instances[type1].getName(),
-				Type.instances[type2].getName()
-			];
+			return [Type.instances[type1].getName(), Type.instances[type2].getName()];
 		}
 	}
 
 	public static isEffective(attack: string, defending: string[]): boolean {
 		const mult = defending.reduce((prev, curr) => {
-			return (
-				prev *
-				global.lcminigames.findVal(Type.Effectiveness[curr], attack, 1)
-			);
+			return prev * global.lcminigames.findVal(Type.Effectiveness[curr], attack, 1);
 		}, 1);
 		return mult >= 2;
 	}

@@ -67,30 +67,20 @@ import type { $MutableComponent } from "net.minecraft.network.chat.MutableCompon
 		content: $Component$$Type | $Component$$Type[]
 	): $MutableComponent {
 		return Text.join(
-			Text.yellow(
-				global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`)
-			),
+			Text.yellow(global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`)),
 			"\n",
 			Text.green(global.lcminigames.centeredMessage(`§l${title}`)),
 			"\n\n",
 			content,
 			"\n\n",
-			Text.yellow(
-				global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`)
-			)
+			Text.yellow(global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`))
 		);
 	};
 
-	global.lcminigames.findVal = function (
-		obj: NonNullable<unknown>,
-		prop: string,
-		defaultValue: unknown
-	): unknown {
+	global.lcminigames.findVal = function (obj: NonNullable<unknown>, prop: string, defaultValue: unknown): unknown {
 		prop = prop.toLowerCase();
 		const p = Object.keys(obj).find(
-			(k) =>
-				Object.prototype.hasOwnProperty.call(obj, k) &&
-				prop === k.toLowerCase()
+			(k) => Object.prototype.hasOwnProperty.call(obj, k) && prop === k.toLowerCase()
 		);
 		return p ? obj[p] : defaultValue;
 	};
