@@ -1,4 +1,4 @@
-lcminigames.DefaultFontInfo = class DefaultFontInfo {
+export class DefaultFontInfo {
 	public static readonly A = new DefaultFontInfo("A", 5);
 	public static readonly a = new DefaultFontInfo("a", 5);
 	public static readonly B = new DefaultFontInfo("B", 5);
@@ -120,4 +120,4 @@ lcminigames.DefaultFontInfo = class DefaultFontInfo {
 		if (this === DefaultFontInfo.SPACE) return this.length;
 		return this.length + 1;
 	}
-};
+}

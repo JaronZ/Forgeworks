@@ -1,4 +1,4 @@
-lcminigames.Pokemon = class Pokemon {
+export class Pokemon {
 	private static instances: Pokemon[] = [];
 
 	public name: string;
@@ -17,8 +17,10 @@ lcminigames.Pokemon = class Pokemon {
 	public getName(): string {
 		return this.name;
 	}
-};
+}
 
-Object.keys(JsonIO.read("kubejs/config/lcminigames/pokemon.json")).forEach((k) => {
-	lcminigames.Pokemon[k] = new lcminigames.Pokemon(pokemon[k]);
+const pokemon = JsonIO.read("kubejs/config/lcminigames/pokemon.json");
+Object.keys(pokemon).forEach((k) => {
+	// @ts-expect-error Dynamic property assignment
+	Pokemon[k] = new Pokemon(pokemon[k]);
 });

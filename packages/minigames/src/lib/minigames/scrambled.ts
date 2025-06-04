@@ -1,9 +1,10 @@
-//requires: cobblemon
+import { Pokemon } from "../pokemon/Pokemon";
+import { scramble, createChatFrame, centeredMessage } from "../util";
 
-lcminigames.minigames.set("scrambled", {
+export default {
 	name: "scrambled",
 	type: "chat",
-	currentWord: null,
+	currentWord: null as string | null,
 	events: ["chat"],
 	timeLimit: global.lcminigames.MINUTE_TICKS * 0.5,
 	getRewards() {
@@ -106,25 +107,27 @@ lcminigames.minigames.set("scrambled", {
 		return message.toLowerCase() === this.currentWord;
 	},
 	execute({ server }: $ServerKubeEvent_) {
-		this.currentWord = lcminigames.Pokemon.getRandom().getName().toLowerCase();
-		const scrambled = global.lcminigames.scramble(this.currentWord);
+		this.currentWord = Pokemon.getRandom().getName().toLowerCase();
+		const scrambled = scramble(this.currentWord);
 		server.tell(
-			global.lcminigames.createChatFrame("Server Minigame", [
-				`${global.lcminigames.centeredMessage("Unscramble the following pokémon")}\n`,
-				Text.aqua(global.lcminigames.centeredMessage(scrambled))
+			createChatFrame("Server Minigame", [
+				`${centeredMessage("Unscramble the following pokémon")}\n`,
+				// @ts-expect-error Typings from .probe are wrong
+				Text.aqua(centeredMessage(scrambled))
 			])
 		);
 	},
+	// @ts-expect-error Typings should be updated
 	end({ server, winner }) {
 		const message = winner
 			? `§2${winner.displayName.string}§r unscrambled the word`
 			: "No one managed to unscrambled the word";
 		server.tell(
-			global.lcminigames.createChatFrame("Server Minigame", [
-				`${global.lcminigames.centeredMessage(message)}\n`,
-				global.lcminigames.centeredMessage(`§b${this.currentWord}`)
+			createChatFrame("Server Minigame", [
+				`${centeredMessage(message)}\n`,
+				centeredMessage(`§b${this.currentWord}`)
 			])
 		);
 		this.currentWord = null;
 	}
-});
+};

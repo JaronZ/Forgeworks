@@ -1,9 +1,10 @@
-//requires: cobblemon
+import { Pokemon } from "../pokemon/Pokemon";
+import { createChatFrame, centeredMessage } from "../util";
 
-lcminigames.minigames.set("generation", {
+export default {
 	name: "generation",
 	type: "chat",
-	generation: null,
+	generation: null as string | null,
 	events: ["chat"],
 	timeLimit: global.lcminigames.MINUTE_TICKS * 0.5,
 	getRewards() {
@@ -106,7 +107,7 @@ lcminigames.minigames.set("generation", {
 		return message.toLowerCase() === this.generation;
 	},
 	execute({ server }: $ServerKubeEvent_) {
-		const pokemon = lcminigames.Pokemon.getRandom();
+		const pokemon = Pokemon.getRandom();
 		this.generation = pokemon.gen.toString();
 		server.tell(
 			global.lcminigames.createChatFrame("Server Minigame", [
@@ -115,16 +116,17 @@ lcminigames.minigames.set("generation", {
 			])
 		);
 	},
+	// @ts-expect-error Typings should be updated
 	end({ server, winner }) {
 		const message = winner
 			? `§2${winner.displayName.string}§r guessed the generation`
 			: "No one managed to guess the generation";
 		server.tell(
-			global.lcminigames.createChatFrame("Server Minigame", [
-				`${global.lcminigames.centeredMessage(message)}\n`,
-				global.lcminigames.centeredMessage(`§bGeneration ${this.generation}`)
+			createChatFrame("Server Minigame", [
+				`${centeredMessage(message)}\n`,
+				centeredMessage(`§bGeneration ${this.generation}`)
 			])
 		);
-		this.currentWord = null;
+		this.generation = null;
 	}
-});
+};

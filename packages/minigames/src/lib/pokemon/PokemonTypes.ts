@@ -1,22 +1,24 @@
-lcminigames.Pokemon.Type = class Type {
-	public static readonly Normal = new Type("Normal");
-	public static readonly Fire = new Type("Fire");
-	public static readonly Water = new Type("Water");
-	public static readonly Electric = new Type("Electric");
-	public static readonly Grass = new Type("Grass");
-	public static readonly Ice = new Type("Ice");
-	public static readonly Fighting = new Type("Fighting");
-	public static readonly Poison = new Type("Poison");
-	public static readonly Ground = new Type("Ground");
-	public static readonly Flying = new Type("Flying");
-	public static readonly Psychic = new Type("Psychic");
-	public static readonly Bug = new Type("Bug");
-	public static readonly Rock = new Type("Rock");
-	public static readonly Ghost = new Type("Ghost");
-	public static readonly Dragon = new Type("Dragon");
-	public static readonly Dark = new Type("Dark");
-	public static readonly Steel = new Type("Steel");
-	public static readonly Fairy = new Type("Fairy");
+import { pickRandom, findVal } from "../util";
+
+export class PokemonType {
+	public static readonly Normal = new PokemonType("Normal");
+	public static readonly Fire = new PokemonType("Fire");
+	public static readonly Water = new PokemonType("Water");
+	public static readonly Electric = new PokemonType("Electric");
+	public static readonly Grass = new PokemonType("Grass");
+	public static readonly Ice = new PokemonType("Ice");
+	public static readonly Fighting = new PokemonType("Fighting");
+	public static readonly Poison = new PokemonType("Poison");
+	public static readonly Ground = new PokemonType("Ground");
+	public static readonly Flying = new PokemonType("Flying");
+	public static readonly Psychic = new PokemonType("Psychic");
+	public static readonly Bug = new PokemonType("Bug");
+	public static readonly Rock = new PokemonType("Rock");
+	public static readonly Ghost = new PokemonType("Ghost");
+	public static readonly Dragon = new PokemonType("Dragon");
+	public static readonly Dark = new PokemonType("Dark");
+	public static readonly Steel = new PokemonType("Steel");
+	public static readonly Fairy = new PokemonType("Fairy");
 	public static readonly Effectiveness = {
 		Normal: {
 			Fighting: 2,
@@ -170,28 +172,32 @@ lcminigames.Pokemon.Type = class Type {
 			Poison: 2
 		}
 	};
-	private static instances: Type[] = [];
+	private static instances: PokemonType[] = [];
 
 	public constructor(public name: string) {
-		Type.instances.push(this);
+		PokemonType.instances.push(this);
 	}
 
 	public static getRandom(): string[] {
 		if (Math.random() < 0.5) {
-			return [global.lcminigames.pickRandom(Type.instances).getName()];
+			return [pickRandom(PokemonType.instances).getName()];
 		} else {
 			let type1, type2;
 			do {
 				type1 = Math.floor(Math.random() * this.instances.length);
 				type2 = Math.floor(Math.random() * this.instances.length);
 			} while (type1 === type2);
-			return [Type.instances[type1].getName(), Type.instances[type2].getName()];
+			return [
+				PokemonType.instances[type1]?.getName() as string,
+				PokemonType.instances[type2]?.getName() as string
+			];
 		}
 	}
 
 	public static isEffective(attack: string, defending: string[]): boolean {
 		const mult = defending.reduce((prev, curr) => {
-			return prev * global.lcminigames.findVal(Type.Effectiveness[curr], attack, 1);
+			// @ts-expect-error Temporarily ignore type error
+			return prev * (findVal(PokemonType.Effectiveness[curr], attack, 1) as number);
 		}, 1);
 		return mult >= 2;
 	}
@@ -199,4 +205,4 @@ lcminigames.Pokemon.Type = class Type {
 	public getName(): string {
 		return this.name;
 	}
-};
+}

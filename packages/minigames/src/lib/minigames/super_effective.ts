@@ -1,9 +1,9 @@
-//requires: cobblemon
+import { PokemonType } from "../pokemon/PokemonTypes";
 
-lcminigames.minigames.set("super_effective", {
+export default {
 	name: "super_effective",
 	type: "chat",
-	defending: null,
+	defending: null as string[] | null,
 	events: ["chat"],
 	timeLimit: global.lcminigames.MINUTE_TICKS * 0.75,
 	getRewards() {
@@ -103,10 +103,10 @@ lcminigames.minigames.set("super_effective", {
 		];
 	},
 	shouldEnd({ message }: $PlayerChatReceivedKubeEvent_): boolean {
-		return lcminigames.Pokemon.Type.isEffective(message.toLowerCase(), this.defending);
+		return PokemonType.isEffective(message.toLowerCase(), this.defending as string[]);
 	},
 	execute({ server }: $ServerKubeEvent_) {
-		this.defending = lcminigames.Pokemon.Type.getRandom();
+		this.defending = PokemonType.getRandom();
 		const defendingString = this.defending.join(" / ");
 		server.tell(
 			global.lcminigames.createChatFrame("Server Minigame", [
@@ -115,6 +115,7 @@ lcminigames.minigames.set("super_effective", {
 			])
 		);
 	},
+	// @ts-expect-error Typings should be updated
 	end({ server, winner }) {
 		const message = winner
 			? `§2${winner.displayName.string}§r Bested the pokémon!`
@@ -123,4 +124,4 @@ lcminigames.minigames.set("super_effective", {
 			global.lcminigames.createChatFrame("Server Minigame", `${global.lcminigames.centeredMessage(message)}`)
 		);
 	}
-});
+};

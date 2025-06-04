@@ -1,3 +1,5 @@
+import { startMinigame, endMinigame } from "./minigames/init";
+
 ServerEvents.commandRegistry((event) => {
 	const { commands: Commands } = event;
 
@@ -7,13 +9,13 @@ ServerEvents.commandRegistry((event) => {
 			.then(
 				Commands.literal("end").executes(
 					(c) => (
-						global.lcminigames.endMinigame({
+						endMinigame({
 							server: c.source.server
 						}),
 						1
 					)
 				)
 			)
-			.then(Commands.literal("start").executes((c) => (global.lcminigames.startMinigame(c.source), 1)))
+			.then(Commands.literal("start").executes((c) => (startMinigame(c.source), 1)))
 	);
 });
