@@ -1,4 +1,3 @@
-//requires: cobblemon
 import "./lib/startup";
 import "./lib/DefaultFontInfo";
 import "./lib/util";
