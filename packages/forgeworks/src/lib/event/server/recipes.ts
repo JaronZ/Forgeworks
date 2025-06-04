@@ -1,9 +1,4 @@
-import {
-	LOG_SUFFIX,
-	STRIPPED_PREFIX,
-	PLANKS_SUFFIX,
-	WOOD_SUFFIX
-} from "../../util/name";
+import { LOG_SUFFIX, STRIPPED_PREFIX, PLANKS_SUFFIX, WOOD_SUFFIX } from "../../util/name";
 import { sawmillRecipe } from "../../util/immersive_engineering";
 
 ServerEvents.recipes((event) => {

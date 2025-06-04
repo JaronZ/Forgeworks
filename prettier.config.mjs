@@ -4,7 +4,7 @@
  */
 const config = {
 	endOfLine: "lf",
-	printWidth: 80,
+	printWidth: 120,
 	quoteProps: "as-needed",
 	semi: true,
 	singleQuote: false,
