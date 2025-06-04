@@ -6,9 +6,7 @@ function transformSawmillOptions(options): unknown {
 		options = Object.assign(options, {
 			input: `${options.namespace}:${options.input}`,
 			output: `${options.namespace}:${options.output}`,
-			stripped: options.stripped
-				? `${options.namespace}:${options.stripped}`
-				: undefined
+			stripped: options.stripped ? `${options.namespace}:${options.stripped}` : undefined
 		});
 	}
 
