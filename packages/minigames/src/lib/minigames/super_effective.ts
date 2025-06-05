@@ -1,11 +1,12 @@
 import { PokemonType } from "../pokemon/PokemonTypes";
+import { MINUTE_TICKS, createChatFrame, centeredMessage } from "../util";
 
-export default {
+export const superEffectiveMinigame = {
 	name: "super_effective",
 	type: "chat",
 	defending: null as string[] | null,
 	events: ["chat"],
-	timeLimit: global.lcminigames.MINUTE_TICKS * 0.75,
+	timeLimit: MINUTE_TICKS * 0.75,
 	getRewards() {
 		return [
 			// Armor Trim Templates
@@ -109,9 +110,9 @@ export default {
 		this.defending = PokemonType.getRandom();
 		const defendingString = this.defending.join(" / ");
 		server.tell(
-			global.lcminigames.createChatFrame("Server Minigame", [
-				`${global.lcminigames.centeredMessage("What type is super effective against the following pokémon")}\n`,
-				Text.aqua(global.lcminigames.centeredMessage(defendingString))
+			createChatFrame("Server Minigame", [
+				`${centeredMessage("What type is super effective against the following pokémon")}\n`,
+				Text.aqua(centeredMessage(defendingString))
 			])
 		);
 	},
@@ -120,8 +121,6 @@ export default {
 		const message = winner
 			? `§2${winner.displayName.string}§r Bested the pokémon!`
 			: "No one managed to beat the pokémon";
-		server.tell(
-			global.lcminigames.createChatFrame("Server Minigame", `${global.lcminigames.centeredMessage(message)}`)
-		);
+		server.tell(createChatFrame("Server Minigame", `${centeredMessage(message)}`));
 	}
 };

@@ -1,13 +1,12 @@
 import type { $MinecraftServer } from "net.minecraft.server.MinecraftServer";
 import type { $Player } from "net.minecraft.world.entity.player.Player";
-import { Collection } from "../Collection";
 import { shuffle, flatArray, pickRandom } from "../util";
-import generationMinigame from "./generation";
-import scrambledMinigame from "./scrambled";
-import superEffectiveMinigame from "./super_effective";
+import { generationMinigame } from "./generation";
+import { scrambledMinigame } from "./scrambled";
+import { superEffectiveMinigame } from "./super_effective";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const minigames = new Collection<string, any>();
+const minigames = new Map<string, any>();
 minigames.set("generation", generationMinigame);
 minigames.set("scrambled", scrambledMinigame);
 minigames.set("super_effective", superEffectiveMinigame);
@@ -49,7 +48,7 @@ export function shouldExecute(eventName: string): boolean {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function execute(data: any, onEnd: any): void {
 	if (currentMinigame.shouldEnd(data)) {
-		global.lcminigames.endMinigame({
+		endMinigame({
 			server: data.server,
 			winner: data.player
 		});

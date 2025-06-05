@@ -1,3 +1,3 @@
 import { createKubeJSPackTsupConfig } from "../../scripts/tsup.config";
 
-export default createKubeJSPackTsupConfig();
+export default createKubeJSPackTsupConfig({ packName: "minigames" });

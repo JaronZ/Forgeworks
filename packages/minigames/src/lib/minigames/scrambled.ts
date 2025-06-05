@@ -1,12 +1,12 @@
 import { Pokemon } from "../pokemon/Pokemon";
-import { scramble, createChatFrame, centeredMessage } from "../util";
+import { scramble, createChatFrame, centeredMessage, MINUTE_TICKS } from "../util";
 
-export default {
+export const scrambledMinigame = {
 	name: "scrambled",
 	type: "chat",
 	currentWord: null as string | null,
 	events: ["chat"],
-	timeLimit: global.lcminigames.MINUTE_TICKS * 0.5,
+	timeLimit: MINUTE_TICKS * 0.5,
 	getRewards() {
 		return [
 			// Armor Trim Templates

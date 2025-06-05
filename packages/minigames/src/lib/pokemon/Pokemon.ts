@@ -1,5 +1,7 @@
+import { pickRandom } from "../util";
+
 export class Pokemon {
-	private static instances: Pokemon[] = [];
+	private static instances: Pokemon[];
 
 	public name: string;
 	public gen: number;
@@ -7,11 +9,12 @@ export class Pokemon {
 	public constructor({ name, gen }: { name: string; gen: number }) {
 		this.name = name;
 		this.gen = gen;
+		Pokemon.instances ??= [];
 		Pokemon.instances.push(this);
 	}
 
 	public static getRandom(): Pokemon {
-		return global.lcminigames.pickRandom(Pokemon.instances);
+		return pickRandom(Pokemon.instances);
 	}
 
 	public getName(): string {

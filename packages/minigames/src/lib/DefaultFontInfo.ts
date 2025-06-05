@@ -95,12 +95,13 @@ export class DefaultFontInfo {
 	public static readonly COMMA = new DefaultFontInfo(",", 1);
 	public static readonly SPACE = new DefaultFontInfo(" ", 3);
 	public static readonly DEFAULT = new DefaultFontInfo("a", 4);
-	private static instances: DefaultFontInfo[] = [];
+	private static instances: DefaultFontInfo[];
 
 	public constructor(
 		public character: string,
 		public length: number
 	) {
+		DefaultFontInfo.instances ??= [];
 		DefaultFontInfo.instances.push(this);
 	}
 

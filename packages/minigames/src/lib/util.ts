@@ -63,13 +63,13 @@ export function centeredMessage(msg: string): string {
 
 export function createChatFrame(title: string, content: $Component$$Type | $Component$$Type[]): $MutableComponent {
 	return Text.join(
-		Text.yellow(global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`)),
+		Text.yellow(centeredMessage(`§m${" ".repeat(81)}`)),
 		"\n",
-		Text.green(global.lcminigames.centeredMessage(`§l${title}`)),
+		Text.green(centeredMessage(`§l${title}`)),
 		"\n\n",
 		content,
 		"\n\n",
-		Text.yellow(global.lcminigames.centeredMessage(`§m${" ".repeat(81)}`))
+		Text.yellow(centeredMessage(`§m${" ".repeat(81)}`))
 	);
 }
 

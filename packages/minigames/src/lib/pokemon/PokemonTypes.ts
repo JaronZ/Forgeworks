@@ -172,9 +172,10 @@ export class PokemonType {
 			Poison: 2
 		}
 	};
-	private static instances: PokemonType[] = [];
+	private static instances: PokemonType[];
 
 	public constructor(public name: string) {
+		PokemonType.instances ??= [];
 		PokemonType.instances.push(this);
 	}
 
