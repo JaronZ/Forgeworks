@@ -1,0 +1,10 @@
+name: minigames
+org: jaronz
+install: true
+packagePath: packages/minigames
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true
+gitRepo: jaronz/forgeworks
+gitHostVariant: github

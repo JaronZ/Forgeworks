@@ -3500,6 +3500,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minigames@workspace:packages/minigames":
+  version: 0.0.0-use.local
+  resolution: "minigames@workspace:packages/minigames"
+  dependencies:
+    "@favware/cliff-jumper": "npm:^6.0.0"
+    "@swc/core": "npm:^1.11.29"
+    npm-run-all2: "npm:^8.0.2"
+    tsup: "npm:^8.5.0"
+    typescript: "npm:^5.8.3"
+  languageName: unknown
+  linkType: soft
+
 "minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
