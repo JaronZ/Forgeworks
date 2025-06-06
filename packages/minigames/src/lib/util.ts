@@ -79,16 +79,11 @@ export function findVal(obj: NonNullable<unknown>, prop: string, defaultValue: u
 	return p ? obj[p] : defaultValue;
 }
 
-/**
- * @param {any[]} array
- * @param {number} [depth]
- * @returns {any[]}
- */
 export function flatArray<T>(array: T[], depth = 1): T[] {
 	if (!Array.isArray(array)) return array;
 	for (let i = 0; i < depth; i++) {
 		if (!array.find((e) => Array.isArray(e))) break;
-		array = ([] as T[]).concat(...array);
+		array = ([] as T[]).concat.apply([], array);
 	}
 	return array;
 }
