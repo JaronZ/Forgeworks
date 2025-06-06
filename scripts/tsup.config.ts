@@ -8,13 +8,10 @@ const baseOptions: Options = {
 	skipNodeModulesBundle: true,
 	sourcemap: false,
 	target: "es5",
-	keepNames: true,
+	keepNames: false,
 	treeshake: true,
 	format: "cjs",
-	tsconfig: relative(
-		__dirname,
-		resolveDir(process.cwd(), "src", "tsconfig.json")
-	)
+	tsconfig: relative(__dirname, resolveDir(process.cwd(), "src", "tsconfig.json"))
 };
 
 function createTsupConfig(outDir: string, options: EnchancedTsupOptions) {
