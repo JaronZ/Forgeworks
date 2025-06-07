@@ -1,6 +1,7 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import prettier from "eslint-plugin-prettier/recommended";
+import globals from "globals";
 
 export default tseslint.config(
 	eslint.configs.recommended,
@@ -13,6 +14,9 @@ export default tseslint.config(
 				project: "./tsconfig.eslint.json",
 				ecmaVersion: 2020,
 				warnOnUnsupportedTypeScriptVersion: false
+			},
+			globals: {
+				...globals.node
 			}
 		},
 		rules: {
@@ -27,10 +31,7 @@ export default tseslint.config(
 			"consistent-return": "error",
 			"default-case-last": "error",
 			eqeqeq: "warn",
-			"max-classes-per-file": [
-				"error",
-				{ ignoreExpressions: true, max: 1 }
-			],
+			"max-classes-per-file": ["error", { ignoreExpressions: true, max: 1 }],
 			"max-depth": ["error", 4],
 			"max-nested-callbacks": ["error", 3],
 			"max-params": ["error", 4],
