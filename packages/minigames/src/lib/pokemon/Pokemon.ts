@@ -22,7 +22,7 @@ export class Pokemon {
 	}
 }
 
-const pokemon = JsonIO.read("kubejs/config/lcminigames/pokemon.json");
+const pokemon = JsonIO.read("kubejs/config/minigames/pokemon.json");
 Object.keys(pokemon).forEach((k) => {
 	// @ts-expect-error Dynamic property assignment
 	Pokemon[k] = new Pokemon(pokemon[k]);
