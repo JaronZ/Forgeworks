@@ -6,12 +6,12 @@ function curl(url) {
 		const curlProcess = spawn("curl", ["-s", "-H", "Accept: application/json", url]);
 
 		curlProcess.on("error", (error) => {
-			reject(`Error executing curl: ${error.message}`, url);
+			reject(new Error(`Error executing curl: ${error.message}. URL: ${url}`));
 		});
 
 		curlProcess.on("close", (code) => {
 			if (code !== 0) {
-				reject(`curl process exited with code ${code}`, url);
+				reject(new Error(`curl process exited with code ${code}. URL: ${url}`));
 			}
 		});
 
