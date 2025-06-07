@@ -25,3 +25,6 @@
 - name: "pack: forgeworks"
   description: "This issue or PR is related to the Forgeworks modpack"
   color: "f0a500"
+- name: "pack: minigames"
+  description: "This issue or PR is related to the Minigames KubeJS pack"
+  color: "f0a500"
