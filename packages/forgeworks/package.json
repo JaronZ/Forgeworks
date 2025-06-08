@@ -10,7 +10,7 @@
 		"postbuild:suffix": "node ../../scripts/remove-type-suffix.mjs modpack",
 		"postbuild:headers": "node ../../scripts/inject-kubejs-headers.mjs modpack",
 		"lint": "eslint src --ext mjs,js,ts,tsx --fix",
-		"bump": "cliff-jumper",
+		"bump": "../../bin/cliff-synched",
 		"check-update": "cliff-jumper --dry-run",
 		"test": "vitest run",
 		"predev": "yarn predev:mods && yarn predev:misc && yarn predev:kubejs",
