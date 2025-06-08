@@ -1,12 +1,12 @@
 name = "Forgeworks"
 author = "Jaron Zijlstra"
-version = "1.0.0"
+version = "1.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "f8bc09a93cc051bd2eea32615605463b310c0e76cdc87c7632efc2498313d5f2"
+hash = "c6e15e426b1fa607f6090bb8ad4db4599863c2b1d0f14ac4abe1aa4745abcbc8"
 
 [versions]
 fabric = "0.16.4"
