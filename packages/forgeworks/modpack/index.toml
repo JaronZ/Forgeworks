@@ -993,6 +993,11 @@ hash = "afe7cf9b4540f876c5d6a7c7b41ed09ff476766f4d31e03d679a191c8bb71a69"
 metafile = true
 
 [[files]]
+file = "mods/create-apothic-enchanting.pw.toml"
+hash = "35157dda4575434db1572b9fd27852e21e4e143cd6e3e4e7b6a6f7164990a010"
+metafile = true
+
+[[files]]
 file = "mods/create-aquatic-ambitions.pw.toml"
 hash = "4789399dc24ceb4fee6683249b47d50fb6c79daa5fa32a19c884903fbe9ba04d"
 metafile = true
