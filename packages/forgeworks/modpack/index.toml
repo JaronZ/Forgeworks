@@ -1028,6 +1028,11 @@ hash = "8c4f15139e373bcac32800b86bc2be00188e13e8a568944fa2b1e43fa84b632f"
 metafile = true
 
 [[files]]
+file = "mods/create-currency-shops.pw.toml"
+hash = "40a3d56b7b52c637af0312cca8ff5caba31588b682401d3cdbe304cde8f3ea6e"
+metafile = true
+
+[[files]]
 file = "mods/create-deep-dark.pw.toml"
 hash = "cb5551099bb4df8beba8029a47b9a256ae5f5a05b4bf304eaaab7a964dc9fef1"
 metafile = true
