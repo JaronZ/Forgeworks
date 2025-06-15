@@ -23,18 +23,7 @@
 		},
 		"predev": {
 			"dependsOn": ["build"],
-			"outputs": [
-				"$TURBO_ROOT$/install/**",
-				"$TURBO_ROOT$/environment/client/mods/**",
-				"$TURBO_ROOT$/environment/client/kubejs/**",
-				"$TURBO_ROOT$/environment/client/config/**",
-				"$TURBO_ROOT$/environment/client/defaultconfigs/**",
-				"$TURBO_ROOT$/environment/client/shaderpacks/**",
-				"$TURBO_ROOT$/environment/server/mods/**",
-				"$TURBO_ROOT$/environment/server/kubejs/**",
-				"$TURBO_ROOT$/environment/server/config/**",
-				"$TURBO_ROOT$/environment/server/defaultconfigs/**"
-			]
+			"cache": false
 		}
 	}
 }
