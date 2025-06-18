@@ -1223,6 +1223,11 @@ hash = "dbf433daaf5ca87264ed08d1dfa2f67da701a8fbe3e1b698295e762b57908047"
 metafile = true
 
 [[files]]
+file = "mods/cucumber.pw.toml"
+hash = "da3432d080152e07a776d5f4ec02a82c4bf9a5e0b92234117a9ad26ea208f944"
+metafile = true
+
+[[files]]
 file = "mods/cuisine-delight.pw.toml"
 hash = "9e341eb9b4c8da4972b4b79d114677c8f61309d79877258646323a14c02f3f21"
 metafile = true
@@ -1550,6 +1555,11 @@ metafile = true
 [[files]]
 file = "mods/iron-furnaces.pw.toml"
 hash = "f97299e57f48f4fbab3192848d4dbc8d1f2412d19b67f70523b64ebbca3c50ce"
+metafile = true
+
+[[files]]
+file = "mods/iron-jetpacks.pw.toml"
+hash = "0efbadceef111b35356faafbde7112d27e88c8bb8afe03fed0806ae1deb5b1a2"
 metafile = true
 
 [[files]]
