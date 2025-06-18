@@ -9,7 +9,7 @@ const serverpackDir = join(process.cwd(), "serverpack");
 console.log(`Serverpack directory to copy from: ${serverpackDir}`);
 
 if (!existsSync(serverpackDir)) {
-	console.error(`KubeJS directory not found: ${serverpackDir}`);
+	console.error(`Serverpack directory not found: ${serverpackDir}`);
 	process.exit(1);
 }
 
