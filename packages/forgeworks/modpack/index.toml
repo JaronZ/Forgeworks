@@ -105,6 +105,10 @@ file = "kubejs/data/alltheores/worldgen/configured_feature/ore_sulfur.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
+file = "kubejs/data/apothic_enchanting/advancement/bookshelf.json"
+hash = "f906f9e00259f6cc2c4dde5fa9765598cc062d08b78d56396a6c965336144903"
+
+[[files]]
 file = "kubejs/data/expandeddelight/worldgen/configured_feature/sait_ore.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
