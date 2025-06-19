@@ -113,6 +113,10 @@ file = "kubejs/data/expandeddelight/worldgen/configured_feature/sait_ore.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
+file = "kubejs/data/forgeworks/recipe/cutting/someassemblyrequired/bread.json"
+hash = "6459f6d5a8556ad49da8a0a71354427a1ff8beafc9599c0aef6f79e6bb226584"
+
+[[files]]
 file = "kubejs/data/forgeworks/recipe/sawmill/biomesoplenty/stripped_dead_log.json"
 hash = "779a523a9ea71bdec38e8fdfe0b28846e3a371b843acd448ac889072b7f98fa0"
 
@@ -647,6 +651,10 @@ hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 [[files]]
 file = "kubejs/data/oritech/worldgen/configured_feature/ore_platinum.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
+
+[[files]]
+file = "kubejs/data/someassemblyrequired/recipe/cutting/farmersdelight/bread.json"
+hash = "6459f6d5a8556ad49da8a0a71354427a1ff8beafc9599c0aef6f79e6bb226584"
 
 [[files]]
 file = "kubejs/server_scripts/main.js"
@@ -1704,11 +1712,6 @@ metafile = true
 [[files]]
 file = "mods/merequester.pw.toml"
 hash = "76e747874f7adebe3811818c4327b1b5dcf65f36794630eb85fc92740427f4b4"
-metafile = true
-
-[[files]]
-file = "mods/mobstacker.pw.toml"
-hash = "6cac254c937aa4366348a25ae06263103b6cddc7a14dc2457f39efe39349882c"
 metafile = true
 
 [[files]]
