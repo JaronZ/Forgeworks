@@ -1307,6 +1307,11 @@ hash = "1dffb7b72d41c7457849c09715e662ae3aebcef1988ce8f6fc060c46170b1a4a"
 metafile = true
 
 [[files]]
+file = "mods/enchanting-infuser-forge.pw.toml"
+hash = "473d2c3c2b40a1c714b843780a24c58d49892083714e583702d7e6b1bdd1010b"
+metafile = true
+
+[[files]]
 file = "mods/ender-io.pw.toml"
 hash = "d3e545cc11931ff0d433a320fd6c1c4e8733715b5eabd7cf1ef987c23516e677"
 metafile = true
