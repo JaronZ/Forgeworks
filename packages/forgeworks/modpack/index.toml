@@ -109,12 +109,16 @@ file = "kubejs/data/apothic_enchanting/advancement/bookshelf.json"
 hash = "f906f9e00259f6cc2c4dde5fa9765598cc062d08b78d56396a6c965336144903"
 
 [[files]]
+file = "kubejs/data/createfood/recipe/farmersdelight/cutting/bread_slice_from_cutting.json"
+hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
+
+[[files]]
 file = "kubejs/data/expandeddelight/worldgen/configured_feature/sait_ore.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
-file = "kubejs/data/forgeworks/recipe/cutting/someassemblyrequired/bread.json"
-hash = "6459f6d5a8556ad49da8a0a71354427a1ff8beafc9599c0aef6f79e6bb226584"
+file = "kubejs/data/extradelight/recipe/cutting/cutting/bread_knife.json"
+hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
 file = "kubejs/data/forgeworks/recipe/sawmill/biomesoplenty/stripped_dead_log.json"
@@ -645,16 +649,16 @@ file = "kubejs/data/mekanism/worldgen/configured_feature/salt.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
+file = "kubejs/data/moredelight/recipe/cutting/bread_slice.json"
+hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
+
+[[files]]
 file = "kubejs/data/oritech/worldgen/configured_feature/ore_nickel.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
 
 [[files]]
 file = "kubejs/data/oritech/worldgen/configured_feature/ore_platinum.json"
 hash = "8a7cad8e704ef9f9784c13ebf22132b1596b137331dd639c7fd81777ce76d220"
-
-[[files]]
-file = "kubejs/data/someassemblyrequired/recipe/cutting/farmersdelight/bread.json"
-hash = "6459f6d5a8556ad49da8a0a71354427a1ff8beafc9599c0aef6f79e6bb226584"
 
 [[files]]
 file = "kubejs/server_scripts/main.js"
