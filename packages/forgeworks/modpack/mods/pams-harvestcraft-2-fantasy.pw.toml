@@ -1,13 +1,13 @@
 name = "Pam's HarvestCraft 2 - Fantasy"
-filename = "pamhc2fantasy-NEOFORGE-1.21.0-1.0.0.jar"
+filename = "pamhc2fantasy-NEOFORGE-1.21.0-1.0.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "598bef421b26e676ed4441e1f4a7457b8bf5491e"
+hash = "77feb64683dd7e928cc467e463d76e96fb8863bf"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5909343
+file-id = 6655184
 project-id = 1141491

@@ -1,13 +1,13 @@
 name = "Crabber's Delight"
-filename = "crabbersdelight-1.21.1-1.1.9.jar"
+filename = "crabbersdelight-1.21.1-1.1.10.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "918446b5d135d80511d93769ffa16889dc8e0c03"
+hash = "8befdebb8cf16140699398686b5e6257d52eb716"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6588355
+file-id = 6609478
 project-id = 892827
