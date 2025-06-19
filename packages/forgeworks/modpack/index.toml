@@ -1862,16 +1862,6 @@ hash = "89b3a0475bb6cc51fcd04be10557bad10b5ac3e8eaca771e19141e631e14fb2f"
 metafile = true
 
 [[files]]
-file = "mods/polymorph.pw.toml"
-hash = "08c5f8baa25f2f83f5b816368ec63fc3bbb4c60a243d63386e2d58d8c43c9b75"
-metafile = true
-
-[[files]]
-file = "mods/polymorphic-energistics.pw.toml"
-hash = "330eae6dd751b70d4761f5fb556bc476f693549f3eb42ff7f441e1cd5bfe3cfb"
-metafile = true
-
-[[files]]
 file = "mods/potentials.pw.toml"
 hash = "f04015fd3ff3d335bf517f00f6c42801f642403faf8670ee124e2f52f8dd9a94"
 metafile = true
