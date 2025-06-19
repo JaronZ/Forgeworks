@@ -1707,11 +1707,6 @@ hash = "76e747874f7adebe3811818c4327b1b5dcf65f36794630eb85fc92740427f4b4"
 metafile = true
 
 [[files]]
-file = "mods/mobstacker.pw.toml"
-hash = "6cac254c937aa4366348a25ae06263103b6cddc7a14dc2457f39efe39349882c"
-metafile = true
-
-[[files]]
 file = "mods/moderately-enough-effect-descriptions-meed.pw.toml"
 hash = "b5efa15d88096bb7a55cd44a9950b811e031db9468c52ad8395273ad7c2cf963"
 metafile = true
