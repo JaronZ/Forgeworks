@@ -27,7 +27,7 @@ permissions:
 jobs:
   minecraft-ci:
     name: Minecraft CI
-    uses: touchtheduck/.github/.github/workflows/reusable-minecraft-ci.yml@main
+    uses: touchtheduck/.github/.github/workflows/reusable-minecraft-ci.yml@a4fa5d8fedf647bac79f9dcd1c51290d4a9b39a9 # main
     with:
       java-version: '21'
       java-distribution: 'microsoft'

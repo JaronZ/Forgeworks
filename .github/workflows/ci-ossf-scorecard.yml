@@ -12,7 +12,7 @@ permissions:
 jobs:
   analysis:
     name: Scorecard analysis
-    uses: touchtheduck/.github/.github/workflows/reusable-ossf-scorecard.yml@main
+    uses: touchtheduck/.github/.github/workflows/reusable-ossf-scorecard.yml@a4fa5d8fedf647bac79f9dcd1c51290d4a9b39a9 # main
     permissions:
       contents: read
       security-events: write
